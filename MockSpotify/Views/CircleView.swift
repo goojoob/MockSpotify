@@ -13,7 +13,7 @@ struct CircleView: View {
 
     var body: some View {
         Circle()
-            .strokeBorder(.black, lineWidth: 1)
+            .strokeBorder(Color("Background"), lineWidth: 1)
             .background(Circle().fill(color))
             .frame(width: size, height: size)
 

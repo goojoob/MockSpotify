@@ -14,18 +14,18 @@ struct HeaderView: View {
             HStack {
                 Text("Good Night")
                     .font(.title2)
-                    .foregroundColor(.white)
+                    .bold()
+                    .foregroundColor(Color("Text"))
                     .padding(.bottom)
                     .padding(.leading)
                 Spacer()
                 IconView(name: "bell", alarm: true)
                 IconView(name: "clock", alarm: false)
                 IconView(name: "gear", alarm: false)
-
             }
         }
         .frame(maxWidth: .infinity, maxHeight: 100)
-        .background(.black.opacity(0.2))
+        .background(Color("Background").opacity(0.2))
         .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
     }
 }

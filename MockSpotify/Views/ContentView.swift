@@ -15,8 +15,7 @@ struct ContentView: View {
                 HeaderView()
                 Spacer()
             }
-            .edgesIgnoringSafeArea(.all
-            )
+            .edgesIgnoringSafeArea(.all)
         }
     }
 }

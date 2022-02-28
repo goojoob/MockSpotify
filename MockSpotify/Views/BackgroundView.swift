@@ -16,7 +16,7 @@ struct BackgroundView: View {
             let time = cos(angle.radians)
 
             ZStack(alignment: .topLeading) {
-                Color.black
+                Color("Background")
                 Circle()
                     .foregroundColor(.yellow)
                     .frame(width: 200, height: 200)

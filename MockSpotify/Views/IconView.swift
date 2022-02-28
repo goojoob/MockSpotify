@@ -17,8 +17,8 @@ struct IconView: View {
         } label: {
             Image(systemName: name)
                 .font(.title2)
-                .foregroundStyle(.white)
-                .padding(.bottom)
+                .foregroundStyle(Color("Text"))
+                .padding(.bottom, 20)
                 .overlay(CircleView(color: .blue, size: 10)
                             .offset(x: -7, y: -15)
                             .opacity(alarm ? 1 : 0)
