@@ -19,9 +19,8 @@ struct IconView: View {
                 .font(.title2)
                 .foregroundStyle(Color("Text"))
                 .padding(.bottom, 20)
-                .overlay(CircleView(color: .blue, size: 10)
+                .overlay(CircleView(color: .blue, size: 10, line: 1, alarm: $alarm)
                             .offset(x: -7, y: -15)
-                            .opacity(alarm ? 1 : 0)
                 )
                 .padding(.horizontal, 8)
         }
